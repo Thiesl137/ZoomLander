@@ -1,0 +1,28 @@
+{ 
+  "manifest_version": 2,
+  "name": "ZoomLander",
+  "description": "Where's my Zoom Link?",
+  "version": "1.0",
+  "permissions": [
+    "background",
+    "alarms",
+    "tabs",
+    "notifications"
+  ],
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+    "calendar-curr.json"
+  ],
+  "icons": {
+    "16": "./assets/Codesmith.png",
+    "48": "./assets/Codesmith.png",
+    "128": "./assets/Codesmith.png"
+  },
+
+  "browser_action": {
+    "default_icon": "./assets/Codesmith.png"
+  }
+}
